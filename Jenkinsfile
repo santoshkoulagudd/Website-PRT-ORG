@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git barnch: 'main', url:'https://github.com/santoshkoulagudd/Website-PRT-ORG.git'
+                git branch: 'main', url:'https://github.com/santoshkoulagudd/Website-PRT-ORG.git'
             }
         }
         stage('Build') {
