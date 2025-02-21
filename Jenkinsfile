@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/santoshkoulagudd/Website-PRT-ORG.git'
+                git credentialsId: 'sanak', url:'https://github.com/santoshkoulagudd/Website-PRT-ORG.git'
             }
         }
         stage('Build') {
